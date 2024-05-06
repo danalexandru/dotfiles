@@ -1,0 +1,38 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=15
+
+# [documentation]
+# full_text=Documentation
+# website=https://vivien.github.io/i3blocks
+# command=xdg-open "$website"
+# color=#f12711
+
+[keyboard-layout]
+label= 
+command=$HOME/.config/scripts/get_keyboard_layout.sh
+interval=1
+
+[check-internet-connection]
+command=$HOME/.config/scripts/check_internet_connection.sh
+interval=10
+
+# [check-if-bluetooth]
+# command=$HOME/.config/scripts/check_if_bluetooth.sh
+# interval=5
+
+[get-battery-percentage]
+command=$HOME/.config/scripts/get_battery_percentage.sh
+interval=300
+
+[time]
+command=$HOME/.config/scripts/get_date_time.sh
+interval=1

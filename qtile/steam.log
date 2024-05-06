@@ -1,0 +1,76 @@
+steam.sh[148212]: Running Steam on endeavouros rolling 64-bit
+steam.sh[148212]: STEAM_RUNTIME is enabled automatically
+setup.sh[148286]: Steam runtime environment up-to-date!
+steam.sh[148212]: Steam client's requirements are satisfied
+06/03 20:33:41 Init: Installing breakpad exception handler for appid(steam)/version(1685664179)/tid(148346)
+
+(process:148346): GLib-GObject-CRITICAL **: g_object_ref: assertion `G_IS_OBJECT (object)' failed
+
+(process:148346): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+Loaded SDL version 3.0.0-1653-gb6a88b033
+GetWin32Stats: display was not open yet, good
+ComputeStartupMode: found registry default startup mode: 0
+Switching to desktopui, since -vgui was not specified
+GetWin32Stats: display was not open yet, good
+steamwebhelper.sh[148384]: Runtime for steamwebhelper: defaulting to /home/aldan/.local/share/Steam/ubuntu12_64/steam-runtime-heavy
+steamwebhelper.sh[148384]: glibc >= 2.34, partially disabling sandbox until CEF supports clone3()
+Fontconfig warning: line 5: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-hinting-slight.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 4: unknown element "description"
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig error: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 72: non-double matrix element
+Fontconfig warning: "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", line 80: saw unknown, expected number
+Fontconfig warning: "/etc/fonts/conf.d/10-sub-pixel-rgb.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/10-yes-antialias.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/11-lcdfilter-default.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/20-unhint-small-vera.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/30-metric-aliases.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/40-nonlatin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/45-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/48-spacing.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/50-user.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/51-local.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-generic.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/60-latin.conf", line 4: unknown element "description"
+Fontconfig warning: "/etc/fonts/conf.d/65-nonlatin.conf", line 4: unknown element "description"
+CAppInfoCacheReadFromDiskThread took 38 milliseconds to initialize
+steamwebhelper.sh[148530]: Runtime for steamwebhelper: defaulting to /home/aldan/.local/share/Steam/ubuntu12_64/steam-runtime-heavy
+steamwebhelper.sh[148530]: glibc >= 2.34, partially disabling sandbox until CEF supports clone3()
+steamwebhelper.sh[148627]: Runtime for steamwebhelper: defaulting to /home/aldan/.local/share/Steam/ubuntu12_64/steam-runtime-heavy
+steamwebhelper.sh[148627]: glibc >= 2.34, partially disabling sandbox until CEF supports clone3()
+[2023-06-03 20:33:41] Startup - updater built Jun  1 2023 23:35:02
+[2023-06-03 20:33:41] Startup - Steam Client launched with: '/home/aldan/.local/share/Steam/ubuntu12_32/steam'
+[2023-06-03 20:33:41] Opted in to client beta 'publicbeta' via beta file
+You are in the 'publicbeta' client beta.
+Looks like steam didn't shutdown cleanly, scheduling immediate update check
+[2023-06-03 20:33:41] Loading cached metrics from disk (/home/aldan/.local/share/Steam/package/steam_client_metrics.bin)
+[2023-06-03 20:33:41] Using the following download hosts for Public, Realm steamglobal
+[2023-06-03 20:33:41] 1. https://client-update.akamai.steamstatic.com, /, Realm 'steamglobal', weight was 1000, source = 'update_hosts_cached.vdf'
+[2023-06-03 20:33:41] 2. https://cdn.cloudflare.steamstatic.com, /client/, Realm 'steamglobal', weight was 1, source = 'update_hosts_cached.vdf'
+[2023-06-03 20:33:41] 3. http://media.steampowered.com, /client/, Realm 'steamglobal', weight was 1, source = 'baked in'
+[2023-06-03 20:33:41] Checking for update on startup
+[2023-06-03 20:33:41] Checking for available updates...
+[2023-06-03 20:33:41] Downloading manifest: https://client-update.akamai.steamstatic.com/steam_client_publicbeta_ubuntu12
+[2023-06-03 20:33:41] Manifest download: send request
+[2023-06-03 20:33:42] Manifest download: waiting for download to finish
+[2023-06-03 20:33:42] Manifest download: finished
+[2023-06-03 20:33:42] Download skipped: /steam_client_publicbeta_ubuntu12 version 1685664179, installed version 1685664179, existing pending version 0
+[2023-06-03 20:33:42] Nothing to do
+[2023-06-03 20:33:42] Verifying installation...
+[2023-06-03 20:33:42] Performing checksum verification of executable files
+[2023-06-03 20:33:43] Verification complete
+XRRGetOutputInfo Workaround: initialized with override: 0 real: 0xf2c15370
+XRRGetCrtcInfo Workaround: initialized with override: 0 real: 0xf2c13cc0
+src/steamUI/steamuisharedjscontroller.cpp (449) : Failed creating offscreen shared JS context
+src/steamUI/steamuisharedjscontroller.cpp (449) : Failed creating offscreen shared JS context
+src/steamUI/steamuisharedjscontroller.cpp (449) : Fatal assert; application exiting
+src/steamUI/steamuisharedjscontroller.cpp (449) : Fatal assert; application exiting
+06/03 20:34:05 Init: Installing breakpad exception handler for appid(steam)/version(1685664179)/tid(148346)
+assert_20230603203405_31.dmp[148650]: Uploading dump (out-of-process)
+/tmp/dumps/assert_20230603203405_31.dmp
+_ExitOnFatalAssert
+assert_20230603203405_31.dmp[148650]: Finished uploading minidump (out-of-process): success = yes
+assert_20230603203405_31.dmp[148650]: response: CrashID=bp-12a81cfc-c984-4fb9-ab3a-f59e02230603
+assert_20230603203405_31.dmp[148650]: file ''/tmp/dumps/assert_20230603203405_31.dmp'', upload yes: ''CrashID=bp-12a81cfc-c984-4fb9-ab3a-f59e02230603''

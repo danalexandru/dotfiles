@@ -1,0 +1,39 @@
+[Added Associations]
+application/pdf=org.pwmt.zathura.desktop;
+image/jpeg=sxiv.desktop;
+text/plain=nvim.desktop;
+x-scheme-handler/http=brave-browser.dekstop;
+x-scheme-handler/https=brave-browser.dekstop;
+x-scheme-handler/chrome=brave-browser.dekstop;
+text/html=brave-browser.dekstop;
+application/x-extension-htm=brave-browser.dekstop;
+application/x-extension-html=brave-browser.dekstop;
+application/x-extension-shtml=brave-browser.dekstop;
+application/xhtml+xml=brave-browser.dekstop;
+application/x-extension-xhtml=brave-browser.dekstop;
+application/x-extension-xht=brave-browser.dekstop;
+application/x-ms-dos-executable=DARK SOULS REMASTERED.desktop;net.lutris.Lutris.desktop;
+image/png=sxiv.desktop;
+video/x-matroska=mpv.desktop;
+text/markdown=brave-browser.dekstop;
+
+[Default Applications]
+text/plain=nvim.desktop
+x-scheme-handler/http=brave-browser.dekstop
+x-scheme-handler/https=brave-browser.dekstop
+x-scheme-handler/chrome=brave-browser.dekstop
+text/html=brave-browser.desktop
+application/x-extension-htm=brave-browser.dekstop
+application/x-extension-html=brave-browser.dekstop
+application/x-extension-shtml=brave-browser.dekstop
+application/xhtml+xml=brave-browser.dekstop
+application/x-extension-xhtml=brave-browser.dekstop
+application/x-extension-xht=brave-browser.dekstop
+image/png=sxiv.desktop
+inode/directory=pcmanfm.desktop
+x-scheme-handler/msteams=teams.desktop
+video/x-matroska=mpv.desktop
+application/pdf=org.pwmt.zathura.desktop
+x-scheme-handler/webcal=brave-browser.desktop
+image/jpeg=sxiv.desktop;
+image/png=sxiv.desktop;

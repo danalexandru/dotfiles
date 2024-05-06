@@ -1,0 +1,40 @@
+[Added Associations]
+application/pdf=org.pwmt.zathura.desktop;
+image/jpeg=sxiv.desktop;
+text/plain=nvim.desktop;
+x-scheme-handler/http=vivaldi-stable.dekstop;
+x-scheme-handler/https=vivaldi-stable.dekstop;
+x-scheme-handler/chrome=vivaldi-stable.dekstop;
+text/html=vivaldi-stable.dekstop;
+application/x-extension-htm=vivaldi-stable.dekstop;
+application/x-extension-html=vivaldi-stable.dekstop;
+application/x-extension-shtml=vivaldi-stable.dekstop;
+application/xhtml+xml=vivaldi-stable.dekstop;
+application/x-extension-xhtml=vivaldi-stable.dekstop;
+application/x-extension-xht=vivaldi-stable.dekstop;
+application/x-ms-dos-executable=DARK SOULS REMASTERED.desktop;net.lutris.Lutris.desktop;
+image/png=sxiv.desktop;
+video/x-matroska=mpv.desktop;
+text/markdown=vivaldi-stable.dekstop;
+
+[Default Applications]
+text/plain=nvim.desktop
+x-scheme-handler/http=vivaldi-stable.dekstop
+x-scheme-handler/https=vivaldi-stable.dekstop
+x-scheme-handler/chrome=vivaldi-stable.dekstop
+text/html=vivaldi-stable.desktop
+application/x-extension-htm=vivaldi-stable.dekstop
+application/x-extension-html=vivaldi-stable.dekstop
+application/x-extension-shtml=vivaldi-stable.dekstop
+application/xhtml+xml=vivaldi-stable.dekstop
+application/x-extension-xhtml=vivaldi-stable.dekstop
+application/x-extension-xht=vivaldi-stable.dekstop
+image/png=sxiv.desktop
+inode/directory=pcmanfm.desktop
+x-scheme-handler/msteams=teams.desktop
+video/x-matroska=mpv.desktop
+application/pdf=org.pwmt.zathura.desktop
+x-scheme-handler/webcal=vivaldi-stable.desktop
+x-scheme-handler/mailto=vivaldi-stable.desktop
+image/jpeg=sxiv.desktop;
+image/png=sxiv.desktop;
