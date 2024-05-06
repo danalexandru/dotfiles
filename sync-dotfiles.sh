@@ -60,6 +60,7 @@ function common() {
     ln -sf "${DOTFILES_DIR}/picom" "${CONFIG_DIR}/picom"
     ln -sf "${DOTFILES_DIR}/vlc" "${CONFIG_DIR}/vlc"
     ln -sf "${DOTFILES_DIR}/tmux" "${CONFIG_DIR}/tmux"
+    ln -sf "${DOTFILES_DIR}/nitrogen" "${CONFIG_DIR}/nitrogen"
 }
 
 function main() {
