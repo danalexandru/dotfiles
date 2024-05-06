@@ -1,5 +1,7 @@
+# Folders
 minidlna/art_cache
 minidlna/backup/art_cache
+emacs
 
 # GIMP
 GIMP/2.10/*
@@ -8,10 +10,10 @@ GIMP/2.10/*
 
 # BINS
 alacritty/alacritty
-awesomne/awesome
+awesome/awesome
 btop/btop
+btop/btop.conf
 doom/doom
-emacs/emacs
 fastfetch/fastfetch
 GIMP/GIMP
 htop/htop
@@ -32,3 +34,6 @@ tmux/tmux
 vlc/vlc
 zathura/zathura
 
+
+# Logs
+*.log

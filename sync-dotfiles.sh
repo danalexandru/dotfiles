@@ -38,7 +38,7 @@ function shells() {
 }
 
 function emacs() {
-    ln -sf "${DOTFILES_DIR}/emacs" "${CONFIG_DIR}/emacs"
+    # ln -sf "${DOTFILES_DIR}/emacs" "${CONFIG_DIR}/emacs"
     ln -sf "${DOTFILES_DIR}/doom" "${CONFIG_DIR}/doom"
 }
 
