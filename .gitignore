@@ -3,6 +3,32 @@ minidlna/backup/art_cache
 
 # GIMP
 GIMP/2.10/*
-!GIMP/2.10/GIMP
 !GIMP/2.10/filters
 !GIMP/2.10/patterns
+
+# BINS
+alacritty/alacritty
+awesomne/awesome
+btop/btop
+doom/doom
+emacs/emacs
+fastfetch/fastfetch
+GIMP/GIMP
+htop/htop
+hypr/hypr
+i3/i3
+i3blocks/i3blocks
+kitty/kitty
+lf/lf
+lsd/lsd
+minidlna/minidlna
+mpv/mpv
+picom/picom
+qt5ct/qt5ct
+qtile/qtile
+ranger/ranger
+sxiv/sxiv
+tmux/tmux
+vlc/vlc
+zathura/zathura
+
