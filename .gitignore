@@ -1,3 +1,8 @@
 minidlna/art_cache
 minidlna/backup/art_cache
-GIMP/2.10/CrashLog
+
+# GIMP
+GIMP/2.10/*
+!GIMP/2.10/GIMP
+!GIMP/2.10/filters
+!GIMP/2.10/patterns
