@@ -1,0 +1,8 @@
+# Basic features
+set selection-clipboard clipboard
+
+set sandbox none
+
+# keybindings
+# map f toggle_fullscreen
+# map [fullscreen] f toggle_fullscreen

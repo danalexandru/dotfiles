@@ -37,6 +37,21 @@ function shells() {
 }
 
 function common() {
+    ln -sf "${SCRIPT_DIR}/ranger" "${CONFIG_DIR}/ranger"
+    ln -sf "${SCRIPT_DIR}/lf" "${CONFIG_DIR}/lf"
+    ln -sf "${SCRIPT_DIR}/sxiv" "${CONFIG_DIR}/sxiv"
+    ln -sf "${SCRIPT_DIR}/lsd" "${CONFIG_DIR}/lsd"
+    ln -sf "${SCRIPT_DIR}/htop" "${CONFIG_DIR}/htop"
+    ln -sf "${SCRIPT_DIR}/btop" "${CONFIG_DIR}/btop"
+    ln -sf "${SCRIPT_DIR}/GIMP" "${CONFIG_DIR}/GIMP"
+    ln -sf "${SCRIPT_DIR}/minidlna" "${CONFIG_DIR}/minidlna"
+    ln -sf "${SCRIPT_DIR}/mpv" "${CONFIG_DIR}/mpv"
+    ln -sf "${SCRIPT_DIR}/fastfetch" "${CONFIG_DIR}/fastfetch"
+    ln -sf "${SCRIPT_DIR}/dunst" "${CONFIG_DIR}/dunst"
+    ln -sf "${SCRIPT_DIR}/flameshot" "${CONFIG_DIR}/flameshot"
+    ln -sf "${SCRIPT_DIR}/zathura" "${CONFIG_DIR}/zathura"
+    ln -sf "${SCRIPT_DIR}/pcmanfm" "${CONFIG_DIR}/pcmanfm"
+    ln -sf "${SCRIPT_DIR}/picom" "${CONFIG_DIR}/picom"
 }
 
 function main() {

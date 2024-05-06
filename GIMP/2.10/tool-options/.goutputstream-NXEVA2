@@ -1,0 +1,8 @@
+# GIMP gimp-unified-transform-tool options
+
+(background (color-rgb 0.92156862745098034 0.85882352941176465 0.69803921568627447))
+(interpolation linear)
+(preview-opacity 0.89599999999999991)
+(grid-type fifths)
+
+# end of gimp-unified-transform-tool options

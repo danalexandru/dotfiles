@@ -1,0 +1,40 @@
+# settings
+
+(GimpGegl-gegl-waterpixels-config "2023-03-04 16:32:05"
+    (time 1677940325)
+    (size 32)
+    (smoothness 1)
+    (regularization 0)
+    (fill average))
+(GimpGegl-gegl-waterpixels-config "2023-03-03 22:06:15"
+    (time 1677873975)
+    (size 12)
+    (smoothness 1)
+    (regularization 0)
+    (fill average))
+(GimpGegl-gegl-waterpixels-config "2023-03-02 21:33:36"
+    (time 1677785616)
+    (size 30)
+    (smoothness 1)
+    (regularization 0)
+    (fill average))
+(GimpGegl-gegl-waterpixels-config "2023-03-02 21:23:36"
+    (time 1677785016)
+    (size 25)
+    (smoothness 1)
+    (regularization 0)
+    (fill average))
+(GimpGegl-gegl-waterpixels-config "2023-03-02 20:24:55"
+    (time 1677781495)
+    (size 10)
+    (smoothness 1)
+    (regularization 0)
+    (fill average))
+(GimpGegl-gegl-waterpixels-config "2023-03-02 20:16:34"
+    (time 1677780994)
+    (size 40)
+    (smoothness 1)
+    (regularization 0)
+    (fill average))
+
+# end of settings
