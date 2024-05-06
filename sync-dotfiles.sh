@@ -11,8 +11,10 @@ function sync_terminals() {
     ln -sf "${SCRIPT_DIR}/kitty" "${CONFIG_DIR}/kitty"
 }
 
-function mimeapps(){
+function defaults(){
     ln -sf "${SCRIPT_DIR}/mimeapps/mimeapps.list" "${CONFIG_DIR}/mimeapps.list"
+    ln -sf "${SCRIPT_DIR}/xorg/.Xresources" "${HOME_DIR}/.Xresources"
+    ln -sf "${SCRIPT_DIR}/xorg/.xinitrc" "${HOME_DIR}/.xinitrc"
 }
 
 function window_managers(){
@@ -39,7 +41,7 @@ function common() {
 
 function main() {
     sync_terminals
-    mimeapps
+    defaults
     window_managers
     shells
     common
