@@ -23,6 +23,17 @@ function window_managers(){
     ln -sf "${SCRIPT_DIR}/i3blocks" "${CONFIG_DIR}/i3blocks"
 }
 
+function shells() {
+    ln -sf "${SCRIPT_DIR}/shells/.bashrc" "${HOME_DIR}/.bashrc"
+    ln -sf "${SCRIPT_DIR}/shells/.zshrc" "${HOME_DIR}/.zshrc"
+
+    ln -sf "${SCRIPT_DIR}/shells/.zprofile" "${HOME_DIR}/.zprofile"
+    ln -sf "${SCRIPT_DIR}/shells/.bash_profile" "${HOME_DIR}/.bash_profile"
+
+    ln -sf "${SCRIPT_DIR}/shells/.bash_aliases" "${HOME_DIR}/.bash_aliases"
+    ln -sf "${SCRIPT_DIR}/shells/zsh" "${CONFIG_DIR}/zsh"
+}
+
 function common() {
 }
 
@@ -30,6 +41,7 @@ function main() {
     sync_terminals
     mimeapps
     window_managers
+    shells
     common
 }
 
