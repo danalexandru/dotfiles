@@ -16,6 +16,7 @@ function defaults(){
     ln -sf "${DOTFILES_DIR}/qt5ct" "${CONFIG_DIR}/qt5ct"
     ln -sf "${DOTFILES_DIR}/xorg/.Xresources" "${HOME_DIR}/.Xresources"
     ln -sf "${DOTFILES_DIR}/xorg/.xinitrc" "${HOME_DIR}/.xinitrc"
+    ln -sf "${DOTFILES_DIR}/.gitconfig" "${HOME_DIR}/.gitconfig"
 }
 
 function window_managers(){

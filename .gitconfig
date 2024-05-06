@@ -1,0 +1,7 @@
+[user]
+	email = danb.alexandru@gmail.com
+	name = danalexandru
+[color "grep"]
+    linenumber = green bold
+    match = red
+    filename = magenta

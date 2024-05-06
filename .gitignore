@@ -34,6 +34,7 @@ tmux/tmux
 vlc/vlc
 zathura/zathura
 nitrogen/bg-saved.cfg
+nitrogen/nitrogen
 
 # Logs
 *.log
