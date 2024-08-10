@@ -54,13 +54,13 @@ mode = "~Vi|~Search"
 mods = "Control"
 
 [[keyboard.bindings]]
-action = "ScrollPageUp"
+action = "ScrollLineUp"
 key = "PageUp"
 mode = "~Alt"
 mods = "Shift"
 
 [[keyboard.bindings]]
-action = "ScrollPageDown"
+action = "ScrollLineDown"
 key = "PageDown"
 mode = "~Alt"
 mods = "Shift"

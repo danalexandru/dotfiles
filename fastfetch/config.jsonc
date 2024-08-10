@@ -115,6 +115,19 @@
             "key": "│ ├󰓡 ",
             "keyColor": "green"
         },
+        /*{
+            "type": "publicip",
+            "key": "│ ├󰩟 ",
+            "timeout": 1000,
+            "keyColor": "green"
+        },*/
+        {
+            "type": "localip",
+            "key": "│ ├󰩟 ",
+            "showIpv6": false,
+            "showMac": true,
+            "keyColor": "green"
+        },
         {
             "type": "uptime",
             "key": "│ └󰅐 ",

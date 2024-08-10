@@ -9,7 +9,7 @@
         }
     },
     "display": {
-        "separator": " -> "
+        "separator": "   "
     },
     "modules": [
         {
@@ -26,7 +26,7 @@
         },
         {
             "type": "custom",
-            "format": " \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m       \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m"
+            "format": " \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m       \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m "
         },
         {
             "type": "custom",
@@ -34,12 +34,12 @@
         },
         {
             "type": "os",
-            "key": "  OS ",
+            "key": "  OS",
             "keyColor": "yellow"
         },
         {
             "type": "kernel",
-            "key": "│ ├ ",
+            "key": "│ ├ ",
             "keyColor": "yellow"
         },
         {
@@ -52,6 +52,7 @@
             "key": "│ └ ",
             "keyColor": "yellow"
         },
+        "break",
         {
             "type": "wm",
             "key": "  DE/WM",
@@ -74,17 +75,13 @@
         },
         {
             "type": "terminalfont",
-            "key": "│ ├ ",
+            "key": "│ └ ",
             "keyColor": "blue"
         },
-        {
-            "type": "wallpaper",
-            "key": "│ └󰸉 ",
-            "keyColor": "blue"
-        },
+        "break",
         {
             "type": "host",
-            "key": "󰌢  PC ",
+            "key": "󰌢  PC",
             "keyColor": "green"
         },
         {
@@ -95,6 +92,12 @@
         {
             "type": "gpu",
             "key": "│ ├󰍛 ",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "│ ├󰍹 ",
+            "compactType": "original",
             "keyColor": "green"
         },
         {
@@ -112,14 +115,22 @@
             "key": "│ ├󰓡 ",
             "keyColor": "green"
         },
+        /*{
+            "type": "publicip",
+            "key": "│ ├󰩟 ",
+            "timeout": 1000,
+            "keyColor": "green"
+        },*/
         {
-            "type": "uptime",
-            "key": "│ ├󰅐 ",
+            "type": "localip",
+            "key": "│ ├󰩟 ",
+            "showIpv6": false,
+            "showMac": true,
             "keyColor": "green"
         },
         {
-            "type": "display",
-            "key": "│ └󰍹 ",
+            "type": "uptime",
+            "key": "│ └󰅐 ",
             "keyColor": "green"
         },
         {
@@ -129,7 +140,7 @@
         "break",
         {
             "type": "custom",
-            "format": " \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m       \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m"
+            "format": " \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m       \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m "
         }
     ]
 }

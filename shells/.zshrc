@@ -15,6 +15,7 @@ zstyle ':vcs_info:*' formats "%b"
 
 precmd() { vcs_info }
 setopt prompt_subst
+stty stop undef		# Disable ctrl-s to freeze terminal.
 
 PROMPT='%B%{$fg[green]%}[%n%{$fg[yellow]%}@%{$fg[cyan]%}%m:%{$fg[red]%}%c %{$fg[magenta]%}(${vcs_info_msg_0_})%f%{$fg[green]%}] %{$fg[yellow]%}%% %{$reset_color%}%b'
 

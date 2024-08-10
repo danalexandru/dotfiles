@@ -96,6 +96,7 @@
     # frame_color = "#c50ed2" # Sweet Dark
     # frame_color = "#ff79c6" # Dracula
     # frame_color = "#3daee9" # Breeze Dark
+    # frame_color = "#FFFFFF" # Black and White
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -338,6 +339,10 @@
     # background = "#1b1e20"
     # foreground = "#eff0f1"
 
+    # Black and White
+    # background = "#000000"
+    # foreground = "#FFFFFF"
+
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
@@ -350,7 +355,7 @@
     # Ayu
     # background = "#0A0B11"
     # foreground = "#FFBF00"
-    
+
     # Gruvbox
     background = "#282828"
     foreground = "#ffaf00"
@@ -362,10 +367,14 @@
     # Dracula
     # background = "#282a36"
     # foreground = "#f8f8f2"
-    
+
     # Breeze Dark
     # background = "#1b1e20"
     # foreground = "#eff0f1"
+
+    # Black and White
+    # background = "#000000"
+    # foreground = "#FFFFFF"
 
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
