@@ -1,0 +1,144 @@
+/* @define-color base00 #181818; */
+/* @define-color base01 #2b2e37; */
+/* @define-color base02 #3b3e47; */
+/* @define-color base03 #585858; */
+/* @define-color base04 #b8b8b8; */
+/* @define-color base05 #d8d8d8; */
+/* @define-color base06 #e8e8e8; */
+/* @define-color base07 #f8f8f8; */
+/* @define-color base08 #ab4642; */
+/* @define-color base09 #dc9656; */
+/* @define-color base0A #f7ca88; */
+/* @define-color base0B #a1b56c; */
+/* @define-color base0C #86c1b9; */
+/* @define-color base0D #7cafc2; */
+/* @define-color base0E #ba8baf; */
+/* @define-color base0F #a16946; */
+
+@define-color background #282828;
+@define-color foreground #ebdbb2;
+@define-color active #ffaf00;
+
+@define-color black #282828;
+@define-color red #cc241d;
+@define-color green #98971a;
+@define-color yellow #d79921;
+@define-color blue #458588;
+@define-color magenta #b16286;
+@define-color cyan #689d6a;
+@define-color white #a89984;
+@define-color light-black #32302f;
+@define-color orange #fe8019;
+
+* {
+  transition: none;
+  box-shadow: none;
+}
+
+#waybar {
+	font-family: 'Source Code Pro', sans-serif;
+	font-size: 1em;
+    color: @foreground;
+    background: @background;
+}
+
+#workspaces {
+    margin-left: 4px;
+}
+
+#workspaces button {
+  margin: 4px 4px 4px 4px;
+  padding: 0 4px;
+  border-radius: 4px;
+  color: @foreground;
+  background-color: @blue;
+}
+
+#workspaces button.active {
+  color: @background;
+  background-color: @active;
+}
+
+
+#workspaces button.empty {
+  color: @foreground;
+  background-color: @light-black;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#tray {
+  margin: 4px 4px 4px 4px;
+  border-radius: 4px;
+  background-color: @light-black;
+}
+
+#tray * {
+  padding: 0 6px;
+}
+
+#tray *:first-child {
+  border-left: none;
+}
+
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature, #language{
+  margin: 4px 0px 4px 0px;
+  padding: 0 6px;
+  background-color: @blue;
+  border-radius: 4px;
+  min-width: 20px;
+}
+
+#pulseaudio.muted {
+  color: @foreground;
+}
+
+#pulseaudio.bluetooth {
+  color: @foreground;
+}
+
+#pulseaudio {
+    color: @foreground;
+    background-color: @cyan;
+}
+
+#battery {
+    color: @background;
+    background-color: @yellow;
+}
+
+
+#clock.date {
+  background-color: @magenta;
+}
+
+#clock.time {
+  background-color: @blue;
+}
+
+#temperature.critical {
+  color: @red;
+}
+
+#window {
+    font-size: 0.9em;
+    font-family: 'Monego';
+}
+
+#language {
+	font-size: 0.9em;
+	letter-spacing: -1px;
+    background-color: @green;
+    color: @background;
+}
+
+#custom-power {
+    margin: 4px 6px 4px 0px;
+	font-size: 1.5em;
+    padding: 0 10px;
+    border-radius: 4px;
+    color: @orange;
+    background-color: @light-black;
+}
