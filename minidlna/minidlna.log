@@ -148,3 +148,20 @@
 [2023/01/29 13:05:09] playlist.c:135: warn: Parsing playlists...
 [2023/01/29 13:05:09] playlist.c:269: warn: Finished parsing playlists.
 [2023/01/29 13:08:53] minidlna.c:199: warn: received signal 15, good-bye
+[2025/04/20 18:23:21] utils.c:295: warn: make_dir: cannot create directory '/var/run/minidlna'
+[2025/04/20 18:23:21] minidlna.c:466: error: Unable to create pidfile directory: /var/run/minidlna/minidlna.pid
+[2025/04/20 18:23:21] minidlna.c:1134: warn: Starting MiniDLNA version 1.3.3.
+[2025/04/20 18:23:21] minidlna.c:394: warn: Creating new database at /home/aldan/Documents/Projects/dotfiles/minidlna/files.db
+[2025/04/20 18:23:21] minidlna.c:1182: warn: HTTP listening on port 8200
+[2025/04/20 18:23:21] scanner.c:731: warn: Scanning /run/media/aldan/Seagate Expansion Drive/Movies
+[2025/04/20 18:23:34] tagutils/tagutils-mp3.c:583: warn: File too small. Probably corrupted. [/run/media/aldan/Seagate Expansion Drive/Movies/Ed, Edd n' Eddy/Specials/Ed, Edd, n' Eddy - Sound Track/Ending theme from Boo Haw Haw [sonidobhh theme].mp3]
+[2025/04/20 18:23:34] metadata.c:382: warn: Cannot extract tags from /run/media/aldan/Seagate Expansion Drive/Movies/Ed, Edd n' Eddy/Specials/Ed, Edd, n' Eddy - Sound Track/Ending theme from Boo Haw Haw [sonidobhh theme].mp3!
+[2025/04/20 18:23:34] scanner.c:490: warn: Unsuccessful getting details for /run/media/aldan/Seagate Expansion Drive/Movies/Ed, Edd n' Eddy/Specials/Ed, Edd, n' Eddy - Sound Track/Ending theme from Boo Haw Haw [sonidobhh theme].mp3
+[2025/04/20 18:23:40] metadata.c:715: warn: Opening /run/media/aldan/Seagate Expansion Drive/Movies/Mr.Robot/Mr.Robot.S01.720p.BluRay.DTS.x264.RoSubbed-VietHD/Mr.Robot.S01E05.eps1.4.3xpl0its.wmv.720p.BluRay.DTS.x264-VietHD.mkv.mkv failed! [Invalid data found when processing input]
+[2025/04/20 18:23:40] scanner.c:490: warn: Unsuccessful getting details for /run/media/aldan/Seagate Expansion Drive/Movies/Mr.Robot/Mr.Robot.S01.720p.BluRay.DTS.x264.RoSubbed-VietHD/Mr.Robot.S01E05.eps1.4.3xpl0its.wmv.720p.BluRay.DTS.x264-VietHD.mkv.mkv
+[2025/04/20 18:24:15] scanner.c:820: warn: Scanning /run/media/aldan/Seagate Expansion Drive/Movies finished (744 files)!
+[2025/04/20 18:24:15] playlist.c:135: warn: Parsing playlists...
+[2025/04/20 18:24:15] playlist.c:269: warn: Finished parsing playlists.
+[2025/04/20 22:36:59] minidlna.c:199: warn: received signal 15, good-bye
+[2025/04/20 22:36:59] minidlna.c:199: warn: received signal 15, good-bye
+[2025/04/20 22:36:59] minidlna.c:217: warn: received signal 1, reloading

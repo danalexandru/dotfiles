@@ -88,3 +88,8 @@ source ~/.manpage.sh
 # colorscript --random
 
 # eval "$(zoxide init --cmd cd zsh)"
+#
+LFCD="${HOME}/.config/lf/lfcd.sh"
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi

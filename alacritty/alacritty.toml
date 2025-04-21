@@ -32,7 +32,8 @@ size = 9.0
 
 [font.normal]
 family = "Monego"
-style = "Regular"
+# family = "JetBrains Mono"
+style = "Bold"
 
 [[keyboard.bindings]]
 action = "Paste"
