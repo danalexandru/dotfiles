@@ -6,19 +6,21 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     // "modules-left": ["hyprland/workspaces", "idle_inhibitor", "pulseaudio", "backlight", "network", "custom/updates"],
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    // "modules-center": ["hyprland/window"],
+    "modules-center": [],
     // "modules-right": ["hyprland/submap", "hyprland/language", "cpu", "memory", "temperature", "battery", "tray", "clock"],
     "modules-right": [
-        "hyprland/submap",
-        "hyprland/language",
-        "pulseaudio",
-        "battery",
-        "network",
-        "clock#date",
-        "clock#time",
+        // "hyprland/submap",
         "tray",
-        "custom/power"
+        // "bluetooth",
+        "hyprland/language",
+        // "pulseaudio",
+        "network",
+        "battery",
+        "clock#date",
+        "clock#time"
+        // "custom/power" 
     ],
     // Modules configuration
      "hyprland/workspaces": {
@@ -28,69 +30,18 @@
          "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
          "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null",
      },
-    "keyboard-state": {
-        "numlock": false,
-        "capslock": false,
-        "format": "{icon} {name}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
     "hyprland/window": {
-        "max-length": 50,
-        "separate-outputs": true
+        // "max-length": 50,
+        "separate-outputs": true,
+        "icon": true,
+        "icon-size": 20,
     },
     "hyprland/language": {
         "format": "{short}",
         "max-length": 18
     },
-    // "hyprland/mode": {
-    //     "format": "<span style=\"italic\">{}</span>"
-    // },
-    // "hyprland/scratchpad": {
-    //     "format": "{icon} {count}",
-    //     "show-empty": false,
-    //     "format-icons": ["", ""],
-    //     "tooltip": true,
-    //     "tooltip-format": "{app}: {title}"
-    // },
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 2,
-        "consume-icons": {
-            "on": " "
-        },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
     "tray": {
-        // "icon-size": 21,
-        "spacing": 0
+        "spacing": 4
     },
     "clock#date": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -123,7 +74,7 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -141,9 +92,9 @@
     "network": {
         "interface": "wlan0", // (Optional) To force the use of this interface
         "format-wifi": " {essid}",
-        "format-ethernet": " {ipaddr}/{cidr}",
-        "tooltip-format": " {ifname} via {gwaddr}",
-        "format-linked": " {ifname} (No IP)",
+        "format-ethernet": "󰌗  {ipaddr}/{cidr}",
+        "tooltip-format": "󰌗  {ifname} via {gwaddr}",
+        "format-linked": "󰌗  {ifname} (No IP)",
         "format-disconnected": "⚠ Disconnected",
         "format-alt": "󰌗 {ifname}: {ipaddr}/{cidr}"
     },

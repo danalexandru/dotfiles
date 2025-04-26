@@ -36,8 +36,8 @@
 }
 
 #waybar {
-	font-family: 'Source Code Pro', sans-serif;
-	font-size: 1em;
+	font-family: 'JetBrains Mono', sans-serif;
+	font-size: 0.95em;
     color: @foreground;
     background: @background;
 }
@@ -54,15 +54,15 @@
   background-color: @blue;
 }
 
-#workspaces button.active {
-  color: @background;
-  background-color: @active;
-}
-
 
 #workspaces button.empty {
   color: @foreground;
   background-color: @light-black;
+}
+
+#workspaces button.active {
+  color: @background;
+  background-color: @active;
 }
 
 #workspaces button.urgent {
@@ -86,7 +86,6 @@
 #mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature, #language{
   margin: 4px 0px 4px 0px;
   padding: 0 6px;
-  background-color: @blue;
   border-radius: 4px;
   min-width: 20px;
 }
@@ -110,12 +109,17 @@
 }
 
 
+#network{
+  background-color: @cyan;
+}
+
 #clock.date {
   background-color: @magenta;
 }
 
 #clock.time {
   background-color: @blue;
+    margin: 4px 6px 4px 0px;
 }
 
 #temperature.critical {
@@ -123,8 +127,9 @@
 }
 
 #window {
-    font-size: 0.9em;
-    font-family: 'Monego';
+    font-size: 1em;
+	font-family: 'JetBrains Mono', sans-serif;
+    color: @foreground;
 }
 
 #language {
@@ -135,7 +140,7 @@
 }
 
 #custom-power {
-    margin: 4px 6px 4px 0px;
+    margin: 4px 0px 4px 6px;
 	font-size: 1.5em;
     padding: 0 10px;
     border-radius: 4px;

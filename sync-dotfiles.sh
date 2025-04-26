@@ -23,6 +23,7 @@ function window_managers(){
     ln -sf "${DOTFILES_DIR}/qtile" "${CONFIG_DIR}/qtile"
     ln -sf "${DOTFILES_DIR}/awesome" "${CONFIG_DIR}/awesome"
     ln -sf "${DOTFILES_DIR}/hypr" "${CONFIG_DIR}/hypr"
+    ln -sf "${DOTFILES_DIR}/waybar" "${CONFIG_DIR}/waybar"
     ln -sf "${DOTFILES_DIR}/i3" "${CONFIG_DIR}/i3"
     ln -sf "${DOTFILES_DIR}/i3blocks" "${CONFIG_DIR}/i3blocks"
 }
