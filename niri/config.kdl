@@ -96,7 +96,7 @@ output "eDP-1" {
     mode "2880x1800@60.000"
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
-    scale 1.3
+    scale 1.5
 
     // Transform allows to rotate the output counter-clockwise, valid values are:
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
@@ -271,11 +271,6 @@ layout {
     }
 }
 
-// overview {
-//     backdrop-color "#000000"
-// }
-
-
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
@@ -286,10 +281,11 @@ layout {
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
-spawn-sh-at-startup "sleep 3 && ~/.config/scripts/set-dark-theme-gnome.sh"
+// spawn-sh-at-startup "sleep 3 && ~/.config/scripts/set-dark-theme-gnome.sh"
 spawn-sh-at-startup "/usr/libexec/kf6/polkit-kde-authentication-agent-1"
 spawn-sh-at-startup "~/.config/scripts/start-swayidle.sh"
-spawn-sh-at-startup "swaybg -i ~/Pictures/Backgrounds/Cyberpunk/2099840-97201893.jpg"
+// spawn-sh-at-startup "swaybg -i ~/Pictures/Backgrounds/Cyberpunk/2099840-97201893.jpg"
+spawn-sh-at-startup "swaybg -i ~/Pictures/Backgrounds/Gruvbox/starry-sky.png"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -362,16 +358,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id="vivaldi-stable"
-    open-maximized true
-}
-
-window-rule {
-    match app-id=r#"vivaldi-stable$"# title="^Picture-in-Picture$"
-    open-floating true
-}
-
-window-rule {
     match app-id="app.zen_browser.zen"
     open-maximized true
 }
@@ -390,6 +376,12 @@ window-rule {
     match app-id="steam" title="Steam"
     open-maximized true
 }
+
+window-rule {
+    match app-id="gimp"
+    open-maximized true
+}
+
 
 // Put swaybg inside the overview backdrop.
 layer-rule {
@@ -412,7 +404,7 @@ layer-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
-    geometry-corner-radius 6
+    geometry-corner-radius 15
     clip-to-geometry true
 }
 
@@ -434,16 +426,17 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     // Alt+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Alt+P hotkey-overlay-title="Run an Application: fuzzel" { spawn-sh "rofi -show drun"; }
+    Alt+P hotkey-overlay-title="Run an Application: rofi" { spawn-sh "rofi -show drun"; }
     Alt+Tab hotkey-overlay-title="Show All Open Windows" { spawn-sh "rofi -show window"; }
     Mod+Semicolon hotkey-overlay-title="Select Emoji" { spawn-sh "rofimoji"; }
-    Mod+P hotkey-overlay-title="Rofi Power Menu" { spawn-sh "rofi -show power-menu -modi power-menu:rofi-power-menu.sh"; }
+    // Mod+P hotkey-overlay-title="Rofi Power Menu" { spawn-sh "rofi -show power-menu -modi power-menu:rofi-power-menu.sh"; }
 
     // Alt+W hotkey-overlay-title="Spawn New Web Browser" { spawn "firefox"; }
     Alt+W hotkey-overlay-title="Spawn New Web Browser" { spawn-sh "flatpak run app.zen_browser.zen"; }
     Mod+Shift+N hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
 
-    Ctrl+Alt+Q hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    // Ctrl+Alt+Q hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Ctrl+Alt+Q hotkey-overlay-title="Lock the Screen: DMS Lock" { spawn-sh "dms ipc call lock lock"; }
     Alt+Escape hotkey-overlay-title="Shut Down PC" { spawn-sh "shutdown now"; }
     Ctrl+Alt+Escape hotkey-overlay-title="Reboot PC" { spawn-sh "reboot"; }
 
