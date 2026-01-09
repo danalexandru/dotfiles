@@ -114,6 +114,29 @@ output "eDP-1" {
     position x=1280 y=0
 }
 
+
+output "HDMI-A-1" {
+    mode "1920x1080@180.000"
+
+    // You can use integer or fractional scale, for example use 1.5 for 150% scale.
+    scale 1
+
+    // Transform allows to rotate the output counter-clockwise, valid values are:
+    // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
+    transform "normal"
+
+    // Position of the output in the global coordinate space.
+    // This affects directional monitor actions like "focus-monitor-left", and cursor movement.
+    // The cursor can only move between directly adjacent outputs.
+    // Output scale and rotation has to be taken into account for positioning:
+    // outputs are sized in logical, or scaled, pixels.
+    // For example, a 3840×2160 output with scale 2.0 will have a logical size of 1920×1080,
+    // so to put another output directly adjacent to it on the right, set its x to 1920.
+    // If the position is unset or results in an overlap, the output is instead placed
+    // automatically.
+    position x=0 y=0
+}
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
@@ -404,7 +427,7 @@ layer-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
-    geometry-corner-radius 15
+    geometry-corner-radius 10
     clip-to-geometry true
 }
 
@@ -428,6 +451,7 @@ binds {
     // Alt+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Alt+P hotkey-overlay-title="Run an Application: rofi" { spawn-sh "rofi -show drun"; }
     Alt+Tab hotkey-overlay-title="Show All Open Windows" { spawn-sh "rofi -show window"; }
+    Mod+P hotkey-overlay-title="Run an Installed Binary" { spawn-sh "rofi -show run"; }
     Mod+Semicolon hotkey-overlay-title="Select Emoji" { spawn-sh "rofimoji"; }
     // Mod+P hotkey-overlay-title="Rofi Power Menu" { spawn-sh "rofi -show power-menu -modi power-menu:rofi-power-menu.sh"; }
 
@@ -452,6 +476,12 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+
+    // Custom settings for handling play, pause, next and previous events
+    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioPause allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioNext      allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPrev      allow-when-locked=true { spawn-sh "playerctl previous"; }
 
     // Example brightness key mappings for brightnessctl.
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
@@ -666,8 +696,8 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    // Print  { screenshot; }
-    Print  { spawn-sh "flameshot gui"; }
+    Print  { screenshot; }
+    // Print  { spawn-sh "flameshot gui"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
