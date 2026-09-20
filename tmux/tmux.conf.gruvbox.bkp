@@ -1,0 +1,79 @@
+# remap prefix from 'C-b' to 'C-a'
+unbind C-b
+set-option -g prefix C-s
+bind-key C-s send-prefix
+
+# setw -g mode-keys vi
+set -g mouse on
+set-option -g status-position top
+
+set -as terminal-features ",xterm-256color:RGB"
+
+# switch panes using VIM keybindings
+bind h select-pane -L
+bind l select-pane -R
+bind k select-pane -U
+bind j select-pane -D
+
+
+# reload config file (change file location to your the tmux.conf you want to use)
+unbind r
+bind r source-file ~/.config/tmux/tmux.conf
+
+# set -g terminal-overrides "xterm*:XT:smcup@:rmcup@:kUP5=\eOA:kDN5=\eOB:kLFT5=\eOD:kRIT5=\eOC"
+
+# bind -T copy-mode-vi J send-keys -X scroll-down; send-keys -X scroll-down; send-keys -X scroll-down
+# bind -T copy-mode-vi K send-keys -X scroll-up; send-keys -X scroll-up; send-keys -X scroll-up
+
+# enable mouse functionality
+# set -g mouse on
+
+# List plugins
+set -g @plugin 'tmux-plugins/tpm' # mandatory
+set -g @plugin 'tmux-plugins/tmux-sensible' # optional recommended
+set -g @plugin 'NHDaly/tmux-better-mouse-mode'
+set -g @plugin 'christoomey/vim-tmux-navigator'
+
+# Restore tmux sessions
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum' # Optional: for auto-save/restore
+
+set -g @resurrect-strategy-nvim 'none'
+set -g @resurrect-processes 'false'
+
+# set -g @plugin 'egel/tmux-gruvbox'
+# # set desired theme options...
+# set -g @tmux-gruvbox 'dark' # or 'dark256', 'light', 'light256'
+
+set -g @plugin 'z3z1ma/tmux-gruvbox'
+set -g @gruvbox_flavour 'dark'
+
+set -g @gruvbox_window_left_separator ""
+set -g @gruvbox_window_right_separator " "
+set -g @gruvbox_window_middle_separator " █"
+set -g @gruvbox_window_number_position "right"
+
+set -g @gruvbox_window_default_fill "number"
+set -g @gruvbox_window_default_text "#W"
+
+set -g @gruvbox_window_current_fill "number"
+set -g @gruvbox_window_current_text "#W"
+
+set -g @gruvbox_status_modules_right "session date_time"
+set -g @gruvbox_status_left_separator  " "
+set -g @gruvbox_status_right_separator ""
+set -g @gruvbox_status_right_separator_inverse "no"
+set -g @gruvbox_status_fill "icon"
+set -g @gruvbox_status_connect_separator "no"
+set -g @gruvbox_date_time_text "%H:%M"
+
+set -g @gruvbox_directory_text "#{pane_current_path}"
+
+set -g @vim_navigator_mapping_left "C-h"  # use C-h and C-Left
+set -g @vim_navigator_mapping_right "C-l"
+set -g @vim_navigator_mapping_up "C-k"
+set -g @vim_navigator_mapping_down "C-j"
+set -g @vim_navigator_prefix_mapping_clear_screen ""
+run '~/.config/tmux/plugins/tpm/tpm'
+
